@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><strong>Christopher Ortiz</strong></a>
+        </div>
+        <div class="navlinks">
+            <ul>
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="portfolio.html">Portfolio</a></li>
+                <li class="link"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="container" class="contactpage">
+        <h1 class="formheader">&bull; Contact Me &bull;</h1>
+        <div class="underline">
+        </div>
+        <form action="https://formspree.io/chrisjortiz1990@gmail.com" method="POST" id="contact_form">
+            <div class="name">
+                <label for="name"></label>
+                <input type="text" placeholder="Name" name="name" id="name_input" required>
+            </div>
+            <div class="email">
+                <label for="email"></label>
+                <input type="email" placeholder="E-mail" name="email" id="email_input" required>
+            </div>
+            <div class="message">
+                <label for="message"></label>
+                <textarea name="message" placeholder="Message" id="message_input" cols="30" rows="5" required></textarea>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Send Message" id="form_button" />
+            </div>
+        </form>
+    </div>
+    <footer id="footer">
+        <span>&copy;Chris Ortiz</span>
+    </footer>
+</body>
+</html>

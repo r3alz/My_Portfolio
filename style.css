@@ -1,0 +1,488 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400);
+@import url("https://fonts.googleapis.com/css?family=Abel|Dancing+Script|Lobster|Vollkorn&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.logo a {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.logo a:hover {
+  transition: all 0.3s ease 0s;
+  color: #0088a9;
+}
+
+.navlinks {
+  list-style: none;
+}
+
+.navlinks li {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0px 20px;
+}
+
+.navlinks li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: black;
+}
+
+.navlinks li a:hover {
+  color: #0088a9;
+}
+
+@media screen and (max-width: 420px) {
+  .navlinks li {
+    display: block;
+  }
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  padding: 60px;
+  background-color: #008b8b;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.headerinfo {
+  font-family: "Lobster", cursive;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  padding: 30px;
+}
+
+.aboutme {
+  flex: 1;
+  padding-left: 20vw;
+  line-height: 1.5;
+}
+
+.aboutme h3 {
+  padding-bottom: 10px;
+  font-family: "Dancing Script", cursive;
+}
+
+.social {
+  flex: 1;
+  padding-left: 10vw;
+}
+
+.social h3 {
+  padding-bottom: 15px;
+  font-family: "Dancing Script", cursive;
+}
+
+.social li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20%;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb6;
+  color: white;
+}
+
+.fa-github {
+  background: white;
+  color: black;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    padding: 0;
+  }
+  .aboutme {
+    padding-left: 0;
+    line-height: 1.5;
+  }
+  .social {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    display: inline;
+    padding: 0;
+  }
+  .aboutme {
+    padding-left: 0;
+    line-height: 1.5;
+  }
+  .aboutme h3 {
+    padding: 10px 0;
+    text-align: center;
+  }
+  .social {
+    padding-left: 0;
+  }
+  .social h3 {
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+
+/* Footer */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 40px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* Portfolio */
+
+img {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.mywork {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  margin: 8px -16px;
+}
+
+.portheader {
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Lobster", cursive;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  width: 50%;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.column h3 {
+  font-family: "Dancing Script", cursive;
+  padding: 5px 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+.content img {
+  cursor: pointer;
+}
+
+.logininfo {
+  list-style: none;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    display: inline;
+    margin: 8px -16px;
+  }
+  .column {
+    width: 100%;
+  }
+}
+
+/* Contact */
+
+.contactpage {
+  font-family: "Montserrat", Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input,
+select,
+textarea {
+  color: #5a5a5a;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  border: solid 3px #474544;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+.formheader {
+  color: #474544;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Lobster", cursive;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  fill: #474544;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.email {
+  float: right;
+  width: 45%;
+}
+
+input[type="text"],
+[type="email"],
+select,
+textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  color: #474544;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+
+.message {
+  float: none;
+}
+
+.name {
+  float: left;
+  width: 45%;
+}
+
+select {
+  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
+    no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  color: #474544;
+}
+
+:-moz-placeholder {
+  color: #474544;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #474544;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #474544;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #474544;
+  color: #f2f3eb;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .formheader {
+    font-size: 26px;
+  }
+
+  .underline {
+    width: 68px;
+  }
+
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .formheader {
+    font-size: 18px;
+  }
+
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+
+  .underline {
+    width: 53px;
+  }
+
+  input[type="text"],
+  [type="email"],
+  select,
+  textarea {
+    font-size: 0.875em;
+  }
+}
